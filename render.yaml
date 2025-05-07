@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: bini-market
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        value: postgresql://Ocho%20Database_owner:npg_5BDhT1UzSWRA@ep-morning-frog-a10qopdc-pooler.ap-southeast-1.aws.neon.tech/Ocho%20Database?sslmode=require
+      - key: TELEGRAM_BOT_TOKEN
+        value: 7762890246:AAH0gl9zd4bTe8u43zhVtihYiuYQYkAtsf4
+      - key: TELEGRAM_ADMIN_ID
+        value: "7057793599"
+    healthCheckPath: /
+    autoDeploy: true
