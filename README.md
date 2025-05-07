@@ -108,21 +108,56 @@ npm run dev
 
 ```
 bini-market/
+│
 ├── client/
 │   ├── public/
 │   │   ├── images/
+│   │   │   └── logo.png
+│   │   │
 │   │   ├── css/
+│   │   │   ├── styles.css
+│   │   │   └── modal.css
+│   │   │
 │   │   ├── js/
+│   │   │   ├── config.js
+│   │   │   ├── utils.js
+│   │   │   ├── api.js
+│   │   │   ├── ui.js
+│   │   │   └── app.js
+│   │   │
 │   │   └── index.html
+│   │
 │   └── src/
+│       ├── components/
+│       ├── styles/
+│       └── utils/
+│
 ├── server/
 │   ├── config/
+│   │   ├── db.js
+│   │   └── telegram.js
+│   │
 │   ├── controllers/
+│   │   ├── postController.js
+│   │   └── paymentController.js
+│   │
 │   ├── middleware/
+│   │   ├── auth.js
+│   │   └── upload.js
+│   │
 │   ├── models/
+│   │   └── index.js
+│   │
 │   ├── routes/
+│   │   ├── postRoutes.js
+│   │   └── paymentRoutes.js
+│   │
 │   └── index.js
-└── package.json
+│
+├── package.json
+├── package-lock.json
+├── README.md
+└── render.yaml
 ```
 
 ## 🔄 API Endpoints
